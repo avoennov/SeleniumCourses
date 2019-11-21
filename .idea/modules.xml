@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-example.iml" filepath="$PROJECT_DIR$/.idea/modules/java-example.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-example.main.iml" filepath="$PROJECT_DIR$/.idea/modules/java-example.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-example.test.iml" filepath="$PROJECT_DIR$/.idea/modules/java-example.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/litecart-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/litecart-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/litecart-tests.main.iml" filepath="$PROJECT_DIR$/.idea/modules/litecart-tests.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/litecart-tests.test.iml" filepath="$PROJECT_DIR$/.idea/modules/litecart-tests.test.iml" />
     </modules>
   </component>
 </project>

@@ -1,16 +1,18 @@
-package ru.stqa.training.litecart;
+package ru.stqa.training.litecart.tests;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import ru.stqa.training.litecart.LoginHelper;
+import ru.stqa.training.litecart.TestBase;
 
-public class AdminSectionTest extends LoginTest{
+public class AdminSectionTest extends TestBase {
 
     @Test
     public void testAdminSection() throws InterruptedException {
-        testLogin();
+        LoginHelper.login("http://localhost/litecart/admin/", "admin", "admin@123$");
         Thread.sleep(1000);
 
         int mainMenuCount =  driver.findElements(By.cssSelector("ul#box-apps-menu li#app-")).size();

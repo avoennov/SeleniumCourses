@@ -16,7 +16,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.urlToBe;
 
 public class LoginTest {
 
-    private WebDriver driver;
+    public WebDriver driver;
     private WebDriverWait wait;
     private FirefoxOptions options;
     private final String browser = BrowserType.CHROME;  //Also possible set FIREFOX or IE for launch test in according browser
@@ -41,7 +41,7 @@ public class LoginTest {
             driver = new FirefoxDriver(options);
         }
         wait = new WebDriverWait(driver, 10);
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("http://localhost/litecart/admin/");
     }
 

@@ -18,17 +18,18 @@ public class StickersTest extends TestBase {
         WebElement item;
 
         for (String section : sectionType) {
-            sectionName = driver.findElement(By.xpath(".//div[@id='" + section + "']//h3[@class]")).getText();
+            sectionName = driver.findElement(By.cssSelector("#" + section + " .title")).getText();
             System.out.println(sectionName);
-            locator = ".//div[@id='" + section + "']//li[@class]";
-            itemsCount = driver.findElements(By.xpath(locator)).size();
+            locator = "#" + section + " li.product";
+            itemsCount = driver.findElements(By.cssSelector(locator)).size();
             if (itemsCount > 0) {
                 for (int i = 1; i <= itemsCount; i++) {
-                    item = driver.findElement(By.xpath(locator + "[" + i + "]"));
-                    stickerCount = item.findElements(By.xpath(".//div[@class='image-wrapper']/div[@title]")).size();
-                    itemName = item.findElement(By.xpath(".//div[@class='name']")).getText();
+                    item = driver.findElement(By.cssSelector(locator + ":nth-child(" + i + ")"));
+                    stickerCount = item.findElements(By.cssSelector("div.sticker")).size();
+                    itemName = item.findElement(By.cssSelector(".name")).getText();
+
                     if (stickerCount == 1) {
-                        stickerName = item.findElement(By.xpath(".//div[@title]")).getText();
+                        stickerName = item.findElement(By.cssSelector(" .sticker")).getText();
                         System.out.println("[PASS] - Item {" + itemName + "} has sticker {" + stickerName + "}");
                     }
                     else if (stickerCount > 1)

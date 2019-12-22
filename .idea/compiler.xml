@@ -6,6 +6,10 @@
       <module name="java-example.test" target="1.8" />
       <module name="litecart-tests.main" target="1.8" />
       <module name="litecart-tests.test" target="1.8" />
+      <module name="ru.stqa.java-example.main" target="1.8" />
+      <module name="ru.stqa.java-example.test" target="1.8" />
+      <module name="ru.stqa.litecart-tests.main" target="1.8" />
+      <module name="ru.stqa.litecart-tests.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
